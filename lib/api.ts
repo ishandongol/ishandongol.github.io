@@ -2,15 +2,16 @@ import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
 
-const postsDirectory = join(process.cwd(), '_portfolio')
+const portfolioDirectory = join(process.cwd(), '_portfolio')
+const experienceDirectory = join(process.cwd(), '_experience')
 
-export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory)
+export function getPortfolioSlugs() {
+  return fs.readdirSync(portfolioDirectory)
 }
 
-export function getPostBySlug(slug: string, fields: string[] = []) {
+export function getPortfolioBySlug(slug: string, fields: string[] = []) {
   const realSlug = slug.replace(/\.md$/, '')
-  const fullPath = join(postsDirectory, `${realSlug}.md`)
+  const fullPath = join(portfolioDirectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
   type Items = {
@@ -36,11 +37,11 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   return items
 }
 
-export function getAllPosts(fields: string[] = []) {
-  const slugs = getPostSlugs()
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
-  return posts
+export function getAllPortfolios(fields: string[] = []) {
+  const slugs = getPortfolioSlugs()
+  const portfolio = slugs
+    .map((slug) => getPortfolioBySlug(slug, fields))
+    // sort portfolio by date in descending order
+    .sort((portfolio1, portfolio2) => (portfolio1.date > portfolio2.date ? -1 : 1))
+  return portfolio
 }

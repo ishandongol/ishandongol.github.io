@@ -4,7 +4,7 @@ import Container from '../../../components/container'
 import PostBody from '../../../components/post-body'
 import PostHeader from '../../../components/post-header'
 import Layout from '../../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../../lib/api'
+import { getPortfolioBySlug, getAllPortfolios } from '../../../lib/api'
 import PostTitle from '../../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../../lib/constants'
@@ -61,7 +61,7 @@ type Params = {
 }
 
 export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug(params.slug, [
+  const post = getPortfolioBySlug(params.slug, [
     'title',
     'date',
     'slug',
@@ -84,7 +84,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'])
+  const posts = getAllPortfolios(['slug'])
 
   return {
     paths: posts.map((posts) => {
