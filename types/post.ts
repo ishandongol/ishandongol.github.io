@@ -7,6 +7,7 @@ type PostType = {
   coverImage: string
   author: Author
   excerpt: string
+  privacyPolicy: boolean
   ogImage: {
     url: string
   }

@@ -1,15 +1,16 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-import Container from '../../components/container'
-import PostBody from '../../components/post-body'
-import PostHeader from '../../components/post-header'
-import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
-import PostTitle from '../../components/post-title'
+import Container from '../../../components/container'
+import PostBody from '../../../components/post-body'
+import PostHeader from '../../../components/post-header'
+import Layout from '../../../components/layout'
+import { getPostBySlug, getAllPosts } from '../../../lib/api'
+import PostTitle from '../../../components/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
-import markdownToHtml from '../../lib/markdownToHtml'
-import PostType from '../../types/post'
+import { CMS_NAME } from '../../../lib/constants'
+import markdownToHtml from '../../../lib/markdownToHtml'
+import PostType from '../../../types/post'
+import Link from 'next/link'
 type Props = {
   post: PostType
   morePosts: PostType[]
@@ -42,6 +43,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 author={post.author}
               />
               <PostBody content={post.content} />
+              {post.privacyPolicy && <Link href="/portfolio/sajilorecharge/privacy"><a className={'ml-4'}>Privacy Policy</a></Link>}
             </article>
           </>
         )}
@@ -66,6 +68,7 @@ export async function getStaticProps({ params }: Params) {
     'author',
     'content',
     'ogImage',
+    'privacyPolicy',
     'coverImage',
   ])
   const content = await markdownToHtml(post.content || '')
