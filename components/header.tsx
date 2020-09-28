@@ -14,12 +14,12 @@ const headerItems: HeaderItem[] = [
   { url: '/', title: 'Home' },
   { url: '/experience', title: 'Experience' },
   { url: '/portfolio', title: 'Portfolio',dynamic:true },
-  { url: '/portfolio/dynamic-routing', title: 'Sajilo Recharge' },
+  { url: '/portfolio/sajilorecharge', title: 'Sajilo Recharge' },
 ]
 const Header: React.FC<HeaderProps> = ({ className }) => {
   const router = useRouter()
   return (
-    <nav className={`flex items-center justify-between flex-wrap p-6 ${className || ''}`}>
+    <nav className={`flex items-center justify-between flex-wrap p-6 ${className || ''} sticky top-0 bg-white`}>
       <Container>
       {/* <div className="flex items-center flex-shrink-0 text-white mr-6">
         <Link href="/">
