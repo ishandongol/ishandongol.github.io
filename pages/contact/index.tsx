@@ -1,6 +1,20 @@
+import { Container } from "next/app"
+import Layout from "../../components/layout"
+import Head from 'next/head'
+import { CMS_NAME } from '../../lib/constants'
+
 const Contact = () => {
     return(
-        <div>Contact Route</div>
+       <>
+       <Layout>
+       <Head>
+          <title>Contact | {CMS_NAME}</title>
+        </Head>
+           <Container>
+               Contact
+           </Container>
+       </Layout>
+       </>
     )
 }
 

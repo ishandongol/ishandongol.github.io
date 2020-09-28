@@ -1,13 +1,24 @@
 import Link from 'next/link'
 
-const Header = () => {
+interface HeaderProps{
+  className?:string
+}
+const Header:React.FC<HeaderProps> = ({className}) => {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
+    <header className={`flex items-center justify-between px-4 py-3 ${className}`}>
+    <div>
       <Link href="/">
-        <a className="hover:underline">Blog</a>
-      </Link>
-      .
-    </h2>
+      <a className="hover:underline h-8">{'< ईशान डंगोल />'}</a>
+        </Link>
+    </div>
+    <div>
+      <button type="button" className="block text-gray-500 hover:text-white focus:text-white focus:outline-none">
+        <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
   )
 }
 
