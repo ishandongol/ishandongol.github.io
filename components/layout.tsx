@@ -1,5 +1,6 @@
 import Footer from './footer'
 import Meta from './meta'
+import Header from '../components/header'
 
 type Props = {
   preview?: boolean
@@ -11,6 +12,7 @@ const Layout = ({ preview, children }: Props) => {
     <>
       <Meta />
       <div className="min-h-screen">
+      <Header className="mb-20" />
         <main>{children}</main>
       </div>
       <Footer />

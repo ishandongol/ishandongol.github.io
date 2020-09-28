@@ -1,7 +1,21 @@
-const Potfolio = () => {
+import { Container } from "next/app"
+import Layout from "../../components/layout"
+import Head from 'next/head'
+import { CMS_NAME } from '../../lib/constants'
+
+const Portfolio = () => {
     return(
-        <div>Portfolio Route</div>
+       <>
+       <Layout>
+       <Head>
+          <title>Portfolio | {CMS_NAME}</title>
+        </Head>
+           <Container>
+               Portfolio
+           </Container>
+       </Layout>
+       </>
     )
 }
 
-export default Potfolio
+export default Portfolio

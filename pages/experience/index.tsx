@@ -1,6 +1,20 @@
+import { Container } from "next/app"
+import Layout from "../../components/layout"
+import Head from 'next/head'
+import { CMS_NAME } from '../../lib/constants'
+
 const Experience = () => {
     return(
-        <div>Experience Route</div>
+       <>
+       <Layout>
+       <Head>
+          <title>Experience | {CMS_NAME}</title>
+        </Head>
+           <Container>
+               Experience
+           </Container>
+       </Layout>
+       </>
     )
 }
 

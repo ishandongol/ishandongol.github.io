@@ -10,6 +10,7 @@ const HomeLayout = ({ children }: Props) => {
         <>
             <Meta />
             <div className="max-h-screen">
+                <Header />
                 <main>{children}</main>
             </div>
         </>

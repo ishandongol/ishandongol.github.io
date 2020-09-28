@@ -1,6 +1,5 @@
 import Container from '../components/container'
 import Intro from '../components/intro'
-import Header from '../components/header'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
@@ -21,7 +20,6 @@ const Index = ({ allPosts }: Props) => {
           <title>Home | {CMS_NAME}</title>
         </Head>
         <Container>
-      <Header/>
           <Intro />
         </Container>
       </HomeLayout>
