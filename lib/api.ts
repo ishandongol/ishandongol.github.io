@@ -45,3 +45,11 @@ export function getAllPortfolios(fields: string[] = []) {
     .sort((portfolio1, portfolio2) => (portfolio1.date > portfolio2.date ? -1 : 1))
   return portfolio
 }
+
+export function getAllExperience() {
+  const fullPath = join(experienceDirectory, `index.md`)
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const { data, content } = matter(fileContents)
+  console.log(data,content)
+  return []
+}

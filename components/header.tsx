@@ -29,7 +29,7 @@ const HeaderLink: React.FC<HeaderItem & { className: string }> = ({ url, title, 
 const Header: React.FC<HeaderProps> = ({ className }) => {
   const router = useRouter()
   return (
-    <nav className={`flex items-center justify-between flex-wrap p-6 ${className || ''} sticky top-0 bg-white`}>
+    <nav className={`flex items-center font-bold justify-between flex-wrap p-6 ${className || ''} sticky top-0 bg-white`}>
       <Container>
         {/* <div className="flex items-center flex-shrink-0 text-white mr-6">
         <Link href="/">
