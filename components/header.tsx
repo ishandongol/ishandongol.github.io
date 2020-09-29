@@ -37,7 +37,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
         </Link>
       </div> */}
         <div className="block lg:hidden">
-          <button className="flex items-center px-3 py-2 border rounded text-gray-700 border-gray-700 hover:text-gray-800 hover:border-gray-800">
+          <button className="flex items-center px-3 py-2 border rounded text-gray-700 border-sajilo hover:text-gray-800 hover:border-gray-800">
             <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
           </button>
         </div>
@@ -47,15 +47,15 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
               const { dynamic,url } = header;
               if(dynamic){
                 return (
-                  <HeaderLink key={url+index} {...header} className={router.asPath.includes(url) ? 'text-gray-900 border-b-4 border-blue-500' : 'text-gray-700'} />
+                  <HeaderLink key={url+index} {...header} className={router.asPath.includes(url) ? 'text-gray-900 border-b-4 border-sajilo' : 'text-gray-700'} />
                 )
               }
               return (
-                <HeaderLink  key={url+index} {...header} className={router.asPath === url ? 'text-gray-900 border-b-4 border-blue-500':'text-gray-700'} />
+                <HeaderLink  key={url+index} {...header} className={router.asPath === url ? 'text-gray-900 border-b-4 border-sajilo':'text-gray-700'} />
               )
             })}
             <Link href="/contact">
-              <a className={`inline-block text-sm px-4 py-2 leading-none border rounded ${router.asPath === '/contact' ? ' bg-blue-500 text-white' : 'text-gray-700'} hover:border-gray-800 hover:text-white hover:bg-gray-800 mt-4 lg:mt-0`}>Contact</a>
+              <a className={`inline-block text-sm px-4 py-2 leading-none border rounded ${router.asPath === '/contact' ? ' bg-sajilo text-white' : 'text-gray-700'} hover:border-gray-800 hover:text-white hover:bg-gray-800 mt-4 lg:mt-0`}>Contact</a>
             </Link>
           </div>
         </div>
