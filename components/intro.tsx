@@ -1,11 +1,10 @@
-import { CMS_NAME } from '../lib/constants'
 
 const Intro = () => {
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mb-16 md:mb-12 h-screen hero">
-      <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8 ml-auto">
+    <section className="flex-col md:flex-row flex items-end md:justify-between mb-16 md:mb-12 h-calculated hero">
+      <h2 className="text-6xl md:text-7xl font-bold tracking-tighter leading-tight  ml-auto pb-24">
       {'{ ... ईशान डंगोल }'}
-      </h1>
+      </h2>
     </section>
   )
 }

@@ -2,12 +2,16 @@ module.exports = {
   purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
   theme: {
     extend: {
+      height:{
+        'calculated':"calc( 100vh - 80px )"
+      },
       colors: {
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
+        'sajilo':'#263238'
       },
       spacing: {
         28: '7rem',
