@@ -1,6 +1,7 @@
 ---
 title: "What's That"
-excerpt: "I developed an object classification Application for Android that identifies
+subTitle: 'An object classification Application for Android™'
+excerpt: "I developed an object classification Application for Android™ that identifies
     the day to day objects like Cup, Keyboard, Marker etc. I used TensorFlow API for
     object clasification."
 coverImage: '/assets/media/whats-that.png'

@@ -1,5 +1,6 @@
 ---
 title: 'Ku App'
+subTitle: 'Navigation and Information based Application for Android™.'
 excerpt: "KAPP is a Navigation and Information based Android App specially designed
     for Kathmandu University. KAPP uses Google Maps API to fetch the map of Kathmandu
     University from Google. This app uses GPS to pinpoint and display user’s location.  When

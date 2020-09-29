@@ -1,5 +1,6 @@
 ---
 title: 'Yes Nepal'
+subTitle: 'Youth Empowerment Session Nepal'
 excerpt: 'I imporvised the Logo for Yes! Nepal. YES! Nepal is a youth empowerment
     session by AIESEC Nepal.'
 coverImage: '/assets/media/yes-nepal.png'

@@ -1,5 +1,6 @@
 ---
 title: 'Mini Volts'
+subTitle: 'An Arduino powered RC car and controlled by Android™.'
 excerpt: 'miniVolts is an Arduino powered RC car and controlled by Android Application.
     I worked on both hardware and software part with Shubam Joshi, Romit Khanal, Rupesh
     Ghimire.'

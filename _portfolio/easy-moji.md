@@ -1,5 +1,6 @@
 ---
 title: 'Easy Moji'
+subTitle: 'Say Cheese!'
 excerpt: "I developed an Application for Android that generates emojis as per
     our facial expression."
 coverImage: '/assets/media/easy-moji.png'

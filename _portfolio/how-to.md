@@ -1,5 +1,6 @@
 ---
 title: 'How To'
+subTitle: 'Game built with C++ and SDL.'
 excerpt: 'How to is my first ever project. The game was written in C++ and SDL.
     I worked with Shubam Joshi, Romit Khanal and Rupesh Ghimire.'
 coverImage: '/assets/media/how-to.png'

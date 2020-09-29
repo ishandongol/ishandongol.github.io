@@ -1,5 +1,6 @@
 ---
 title: 'IT Meet 2018'
+subTitle: 'Discover . Develop . Deploy'
 excerpt: 'I worked as a design team lead in IT MEET 2018'
 coverImage: '/assets/media/itmeet.png'
 date: '2020-03-16T05:35:07.322Z'

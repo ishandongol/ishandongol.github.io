@@ -1,6 +1,6 @@
 ---
 title: 'ISC 2017'
-subTitle: 'Science for Sustainable World'
+subTitle: 'Science for Sustainable World.'
 excerpt: "The 7th International Science Conference was held on 10-11 November,
     2017 at Kathmandu University. This premier event was chaired jointly by World
     Science Congress and Department of Biotechnology, School of Science, Kathmandu

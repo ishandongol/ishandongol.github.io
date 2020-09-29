@@ -1,5 +1,7 @@
 ---
 title: 'ICDRET'
+subTitle: 'The 5th International Conference on Developments in Renewable Energy
+    Technology 2018.'
 excerpt: "The 5th International Conference on Developments in Renewable Energy
     Technology 2018 (ICDRET'2018) is the 5th event in the ICDRET conference series
     that bring together academicians, researchers, engineers and industry experts
