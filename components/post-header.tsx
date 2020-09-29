@@ -6,15 +6,16 @@ import Author from '../types/author'
 
 type Props = {
   title: string
+  subTitle?:string
   coverImage: string
   date: string
   author: Author
 }
 
-const PostHeader = ({ title, coverImage, date, author }: Props) => {
+const PostHeader = ({ title, coverImage, date, author,subTitle }: Props) => {
   return (
     <>
-      <PostTitle>{title}</PostTitle>
+      <PostTitle subTitle={subTitle}>{title}</PostTitle>
       <div className="hidden md:block md:mb-12">
         <Avatar name={author.name} picture={author.picture} />
       </div>

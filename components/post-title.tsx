@@ -2,13 +2,17 @@ import { ReactNode } from 'react'
 
 type Props = {
   children?: ReactNode
+  subTitle?: ReactNode
 }
 
-const PostTitle = ({ children }: Props) => {
+const PostTitle = ({ children,subTitle }: Props) => {
   return (
-    <h1 className="text-6xl md:text-7xl lg:text-7xl font-bold tracking-tighter leading-tight md:leading-none mb-20 text-center md:text-left ">
+    <div className="mb-20">
+      <h1 className="text-6xl md:text-7xl lg:text-7xl font-bold tracking-tighter leading-tight md:leading-none  text-center md:text-left ">
       {children}
     </h1>
+  {subTitle && <p className="text-lg pl-1 pt-2 text-gray-500">{subTitle}</p>}
+    </div>
   )
 }
 
