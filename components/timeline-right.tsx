@@ -1,20 +1,22 @@
+import ExperienceData from "../types/experience"
 import TimelineBox from "./timeline-box"
 import TimeLineBoxWrapper from "./timeline-box-wrapper"
 import TimelineLine from "./timeline-line"
 import TimelineWrapper from "./timeline-wrapper"
 
-const TimelineRight = () => {
+const TimelineRight = (props: ExperienceData) => {
   return (
     <TimelineWrapper>
-    <TimeLineBoxWrapper/>
-    <TimelineLine/>
-    <TimeLineBoxWrapper>
+      <TimeLineBoxWrapper />
+      <TimelineLine />
+      <TimeLineBoxWrapper>
       <TimelineBox
-      title="Software Engineer"
-      subTitle="Present"
-      content="I am who i am"
-      />
-    </TimeLineBoxWrapper>
+                    title={props.role}
+                    subTitle={`${props.org}`}
+                    date={`${props.startYear} - ${props.endYear}`}
+                    content={props.description}
+                />
+      </TimeLineBoxWrapper>
     </TimelineWrapper>
   )
 }
