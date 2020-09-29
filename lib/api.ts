@@ -49,7 +49,6 @@ export function getAllPortfolios(fields: string[] = []) {
 export function getAllExperience() {
   const fullPath = join(experienceDirectory, `index.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
-  const { data, content } = matter(fileContents)
-  console.log(data,content)
-  return []
+  const data = matter(fileContents)
+  return data
 }
