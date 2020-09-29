@@ -14,7 +14,6 @@ tag:
   - AIESEC Nepal
   - AIESECinKU
   - MC EVEREST
-date: '2020-03-16T05:35:07.322Z'
 author:
   name: Ishan Dongol
   picture: '/assets/media/ishan.jpg'

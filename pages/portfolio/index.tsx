@@ -27,7 +27,6 @@ const Portfolio = ({allPosts}:Props) => {
             <HeroPortfolio
               title={heroProtfolio.title}
               coverImage={heroProtfolio.coverImage}
-              date={heroProtfolio.date}
               author={heroProtfolio.author}
               slug={heroProtfolio.slug}
               excerpt={heroProtfolio.excerpt}

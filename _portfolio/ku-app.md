@@ -11,7 +11,6 @@ excerpt: "KAPP is a Navigation and Information based Android App specially desig
     can see the offices or labs of every floor which provides a helpful navigation
     inside of a building."
 coverImage: '/assets/media/ku-app.png'
-date: '2020-03-16T05:35:07.322Z'
 role: Designer | Developer
 duration: 1 Year
 teamMembers:

@@ -5,7 +5,6 @@ excerpt: "I developed an object classification Application for Android™ that i
     the day to day objects like Cup, Keyboard, Marker etc. I used TensorFlow API for
     object clasification."
 coverImage: '/assets/media/whats-that.png'
-date: '2020-03-16T05:35:07.322Z'
 role: 'Developer'
 duration: '1 Month'
 teamMembers:
