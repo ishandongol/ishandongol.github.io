@@ -25,7 +25,7 @@ const HomeLayout = ({ children }: Props) => {
     return (
         <>
             <Meta />
-            <div className="min-h-screen">
+            <div className="min-h-screen text-sajilo">
                 <Header/>
                 <main className="h-calculated">{children}</main>
             </div>

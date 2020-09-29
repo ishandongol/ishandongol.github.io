@@ -11,7 +11,8 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
-        'sajilo':'#263238'
+        'sajilo':'#263238',
+        'sajilo-yellow':'#f2a233'
       },
       spacing: {
         28: '7rem',
