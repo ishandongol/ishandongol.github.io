@@ -1,6 +1,6 @@
 import Container from './container'
-import { skills } from '../lib/constants'
 import Link from 'next/link'
+import Skills from './skills'
 const Footer = () => {
   return (
     <footer className="bg-accent-1 border-t border-accent-2">
@@ -12,13 +12,7 @@ const Footer = () => {
                 <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
               </svg> to work with.
           </h3>
-            <div className="mb-12 lg:mb-0 lg:inline-flex text-center">
-              {skills.map((skill) => {
-                return (
-                  <i className={`flex-1 hover:text-sajilo text-gray-700 text-center pl-2 pr-2 pt-4 lg:pt-6 lg:pl-0 lg:pr-4 text-3xl lg:text-6xl lab la-${skill.name}`}></i>
-                )
-              })}
-            </div>
+            <Skills/>
           </div>
           <div className="flex mt-4 flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/4">
             <Link href="/contact">

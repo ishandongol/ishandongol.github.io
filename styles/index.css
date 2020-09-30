@@ -13,14 +13,3 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
-
-.patterns{
-    background-image: url("../public/pattern.svg")
-}
-
-.hero{
-    background-image: url("../public/hero.svg");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: 70%;
-}

@@ -11,9 +11,11 @@ const HomeLayout = ({ children }: Props) => {
     return (
         <>
             <Meta />
-            <div className="min-h-screen text-sajilo ">
+            <div className="h-auto lg:min-h-screen text-sajilo ">
                 <Header />
-                <main className="h-calculated">{children}</main>
+                <main className="h-calculated">
+                    {children}
+                </main>
             </div>
         </>
     )

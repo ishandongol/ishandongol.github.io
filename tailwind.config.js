@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       height:{
-        'calculated':"calc( 100vh - 80px )"
+        'calculated':"calc( 100vh - 80px )",
+        'intro':"calc( 100vh - 120px )"
       },
       colors: {
         'accent-1': '#FAFAFA',
@@ -33,6 +34,10 @@ module.exports = {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
         medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
       },
+      backgroundImage:{
+        'pattern': 'url("/pattern.svg")',
+        'hero': 'url("/hero.svg")',
+      }
     },
   },
 }
