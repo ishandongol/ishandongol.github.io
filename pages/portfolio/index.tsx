@@ -13,8 +13,6 @@ type Props = {
   }
 
 const Portfolio = ({allPosts}:Props) => {
-    const heroProtfolio = allPosts.find((post) => post.slug === 'sajilorecharge')
-    const morePortfolio = allPosts.filter((post) => post.slug !== 'sajilorecharge')
     return(
        <>
        <Layout>
@@ -23,16 +21,7 @@ const Portfolio = ({allPosts}:Props) => {
         </Head>
            <Container>
                <PostTitle>Portfolio</PostTitle>
-               {heroProtfolio && (
-            <HeroPortfolio
-              title={heroProtfolio.title}
-              coverImage={heroProtfolio.coverImage}
-              author={heroProtfolio.author}
-              slug={heroProtfolio.slug}
-              excerpt={heroProtfolio.excerpt}
-            />
-          )}
-          {morePortfolio.length > 0 && <MorePortfolio posts={morePortfolio} />}
+          {allPosts.length > 0 && <MorePortfolio posts={allPosts} />}
            </Container>
        </Layout>
        </>
