@@ -12,10 +12,10 @@ const Footer = () => {
   <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
 </svg> to work with.
           </h3>
-          <div className="inline-flex">
+          <div className="mb-12 lg:mb-0 lg:inline-flex">
           {skills.map((skill) =>{
   return(
-    <i className={`flex-1 text-gray-700 text-center pr-4 pt-6 text-6xl lab la-${skill.name}`}></i>
+    <i className={`flex-1 text-gray-700 text-center pl-2 pr-2 pt-4 lg:pt-6 lg:pl-0 lg:pr-4 text-4xl lg:text-6xl lab la-${skill.name}`}></i>
   )
 })}
           </div>
