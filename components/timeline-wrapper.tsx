@@ -8,6 +8,6 @@ const TimelineWrapper:React.FC = ({children}) => {
     )
   }
   
-  export default TimelineWrapper
+export default TimelineWrapper
   
  
