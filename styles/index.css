@@ -21,4 +21,6 @@
 .hero{
     background-image: url("../public/hero.svg");
     background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 70%;
 }
