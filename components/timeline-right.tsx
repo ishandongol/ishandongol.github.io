@@ -7,7 +7,7 @@ import TimelineWrapper from "./timeline-wrapper"
 const TimelineRight = (props: ExperienceData) => {
   return (
     <TimelineWrapper>
-      <TimeLineBoxWrapper />
+      <TimeLineBoxWrapper className="hidden lg:block" />
       <TimelineLine />
       <TimeLineBoxWrapper>
       <TimelineBox

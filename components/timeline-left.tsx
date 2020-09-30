@@ -16,7 +16,7 @@ const TimelineLeft = (props: ExperienceData) => {
                 />
             </TimeLineBoxWrapper>
             <TimelineLine />
-            <TimeLineBoxWrapper />
+            <TimeLineBoxWrapper className="hidden lg:block" />
 
         </TimelineWrapper>
     )

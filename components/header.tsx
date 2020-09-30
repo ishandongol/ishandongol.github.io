@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Container from '../components/container'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 
 interface HeaderProps {
   className?: string
@@ -28,6 +29,7 @@ const HeaderLink: React.FC<HeaderItem & { className: string }> = ({ url, title, 
 }
 const Header: React.FC<HeaderProps> = ({ className }) => {
   const router = useRouter()
+  const [toggled,setToggled] = useState<boolean>(false)
   return (
     <nav className={`z-10 flex items-center font-bold justify-between flex-wrap p-6 ${className || ''} sticky top-0 bg-white`}>
       <Container>
@@ -36,13 +38,15 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
           <a className="hover:underline h-8 subpixel-antialiased ">{'< ईशान डंगोल />'}</a>
         </Link>
       </div> */}
-        <div className="block lg:hidden">
-          <button className="flex items-center px-3 py-2 border rounded text-gray-700 border-sajilo hover:text-gray-800 hover:border-gray-800">
+        <div className="block lg:hidden ">
+          <button onClick={()=>{
+            setToggled(!toggled)
+          }} className="flex items-center px-3 py-2 border rounded text-gray-700 border-sajilo hover:text-gray-800 hover:border-gray-800">
             <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
           </button>
         </div>
-        <div className="block flex-grow lg:flex lg:items-center lg:w-auto text-right">
-          <div className="text-sm lg:flex-grow">
+        <div className="block flex-grow lg:flex lg:items-center lg:w-auto lg:text-right">
+          <div className={`text-sm lg:flex-grow ${toggled ? '':'hidden'} lg:inline`}>
             {headerItems.map((header,index) => {
               const { dynamic,url } = header;
               if(dynamic){
