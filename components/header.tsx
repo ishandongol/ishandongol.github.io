@@ -51,15 +51,15 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
               const { dynamic,url } = header;
               if(dynamic){
                 return (
-                  <HeaderLink key={url+index} {...header} className={router.asPath.includes(url) ? 'text-gray-900 border-b-4 border-sajilo' : 'text-gray-700'} />
+                  <HeaderLink key={url+index} {...header} className={router.asPath.includes(url) ? 'text-gray-900 border-b-4 border-sajilo-yellow' : 'text-gray-700'} />
                 )
               }
               return (
-                <HeaderLink  key={url+index} {...header} className={router.asPath === url ? 'text-gray-900 border-b-4 border-sajilo':'text-gray-700'} />
+                <HeaderLink  key={url+index} {...header} className={router.asPath === url ? 'text-gray-900 border-b-4 border-sajilo-yellow':'text-gray-700'} />
               )
             })}
             <Link href="/contact">
-              <a className={`inline-block text-sm px-4 py-2 leading-none border rounded ${router.asPath === '/contact' ? ' bg-sajilo text-white' : 'text-gray-700'} hover:border-gray-800 hover:text-white hover:bg-gray-800 mt-4 lg:mt-0`}>Contact</a>
+              <a className={`inline-block text-sm px-4 py-2 leading-none border border-sajilo-yellow rounded ${router.asPath === '/contact' ? ' bg-sajilo-yellow text-sajilo' : 'text-gray-700'} hover:border-sajilo-yellow hover:text-sajilo hover:bg-sajilo-yellow mt-4 lg:mt-0`}>Contact</a>
             </Link>
           </div>
         </div>
