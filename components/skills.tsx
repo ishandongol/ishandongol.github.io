@@ -1,7 +1,7 @@
 
 import { skills } from '../lib/constants'
 
-const Skills = ({star}:{star:boolean}) => {
+const Skills = ({star}:{star?:boolean}) => {
   const filteredSkills = star ? skills.filter((skill) => skill.star) : skills
   return (
     <div className="mb-12 lg:mb-0 lg:inline-flex text-center">
