@@ -23,7 +23,7 @@ const Experience = ({data}: ExperienceProps) => {
             </Head>
             <Container>
                <PostTitle>Experience</PostTitle>
-               <div className="min-h-screen flex justify-center my-24">
+               <div className="min-h-screen flex justify-center lg:my-24">
                   <div className="w-full mx-auto">
                      {data && data.map((exp,index) => {
                         if(index%2===0){
