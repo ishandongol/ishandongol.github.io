@@ -6,13 +6,16 @@ import PostTitle  from '../../components/post-title'
 import { getAllPortfolios } from "../../lib/api"
 import Post from '../../types/post'
 import MorePortfolio from '../../components/more-stories'
-import HeroPortfolio from '../../components/hero-post'
 
 type Props = {
     allPosts: Post[]
   }
 
 const Portfolio = ({allPosts}:Props) => {
+  const sajiloIndex = allPosts.findIndex((post) => post.slug === 'sajilorecharge')
+  const sajiloRecharge = allPosts[sajiloIndex]
+  const withoutSajiloRecharge = allPosts.filter((post) => post.slug !== sajiloRecharge.slug)
+  const all = [sajiloRecharge,...withoutSajiloRecharge]
     return(
        <>
        <Layout>
@@ -21,7 +24,7 @@ const Portfolio = ({allPosts}:Props) => {
         </Head>
            <Container>
                <PostTitle>Portfolio</PostTitle>
-          {allPosts.length > 0 && <MorePortfolio posts={allPosts} />}
+          {allPosts.length > 0 && <MorePortfolio posts={all} />}
            </Container>
        </Layout>
        </>
