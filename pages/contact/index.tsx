@@ -50,8 +50,8 @@ const Contact = () => {
                   { title: 'Home', url: '/' },
                   { title: pageTitle, url: `/contact` },
                ]} />
-               <PostTitle subTitle="Just a click away.">{pageTitle}</PostTitle>
-               <div className="bg-white mt-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-xl rounded-lg shadow-sm hover:shadow-medium mx-auto mb-20">
+               {/* <PostTitle subTitle="Just a click away.">{pageTitle}</PostTitle> */}
+               <div className="bg-white mt-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-xl rounded-lg shadow hover:shadow-medium mx-auto mb-20">
                   <div className="relative h-40">
                      <img className="absolute h-full w-full object-cover" src="/assets/media/smart-panas.png" />
                   </div>
