@@ -5,16 +5,18 @@ type Props = {
   title: string
   src: string
   slug?: string
+  shadow?:boolean
+  roundedTop?:boolean
 }
 
-const CoverImage = ({ title, src, slug }: Props) => {
+const CoverImage = ({ title, src, slug,shadow,roundedTop }: Props) => {
   const image = (
     <img
       src={src}
       alt={`Cover Image for ${title}`}
-      className={cn('shadow-small', {
+      className={cn('w-screen', {'shadow-small ':shadow}, {
         'hover:shadow-medium transition-shadow duration-200': slug,
-      })}
+      },{'rounded-t-lg':roundedTop},{'rounded-lg':!roundedTop})}
     />
   )
   return (
