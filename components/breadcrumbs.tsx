@@ -10,7 +10,7 @@ interface BreadcrumbProps {
 }
 export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
     return (
-        <nav className="text-sajilo font-bold my-8" aria-label="Breadcrumb">
+        <nav className="text-sajilo font-bold mb-8" aria-label="Breadcrumb">
             <ol className="list-none p-0 inline-flex">
                 {items.map((item,itemIndex) => {
                     return (

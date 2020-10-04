@@ -7,7 +7,7 @@ type Props = {
   additionalHeaderClass?: string;
 }
 
-const PostTitle = ({ children,subTitle,alignLeft ,additionalHeaderClass}: Props) => {
+const PostTitle = ({ children,subTitle,alignLeft=true ,additionalHeaderClass}: Props) => {
   return (
     <div className="mb-12">
       <h1 className={`text-6xl text-sajilo md:text-7xl lg:text-7xl font-bold tracking-tighter leading-tight md:leading-none ${additionalHeaderClass || ''}  ${alignLeft?'text-left':'text-center md:text-left'}`}>

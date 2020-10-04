@@ -8,6 +8,7 @@ import PostBody from '../../components/post-body'
 import TimelineRight from "../../components/timeline-right"
 import TimelineLeft from "../../components/timeline-left"
 import ExperienceData from "../../types/experience"
+import Breadcrumb from '../../components/breadcrumbs'
 
 interface ExperienceProps {
    data: ExperienceData[];
@@ -15,14 +16,19 @@ interface ExperienceProps {
 }
 
 const Experience = ({data}: ExperienceProps) => {
+   const pageTitle = 'Experience'
    return (
       <>
          <Layout>
             <Head>
-               <title>Experience | {CMS_NAME}</title>
+               <title>{pageTitle} | {CMS_NAME}</title>
             </Head>
             <Container>
-               <PostTitle>Experience</PostTitle>
+               <Breadcrumb items={[
+                  {title:'Home',url:'/'},
+                  {title:pageTitle,url:`/experience`},
+               ]}/>
+               <PostTitle>{pageTitle}</PostTitle>
                <div className="min-h-screen flex justify-center lg:my-24">
                   <div className="w-full mx-auto">
                      {data && data.map((exp,index) => {

@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
   const router = useRouter()
   const [toggled,setToggled] = useState<boolean>(false)
   return (
-    <nav className={`z-10 flex items-center font-bold justify-between flex-wrap p-6 ${className || ''} sticky top-0 bg-white`}>
+    <nav className={`z-10 flex items-center font-bold justify-between flex-wrap  pt-5 pb-5 lg:p-6 ${className || ''} sticky top-0 bg-white`}>
       <Container>
         
         <div className="flex lg:hidden">

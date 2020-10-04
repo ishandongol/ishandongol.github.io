@@ -6,7 +6,7 @@ import PostTitle  from '../../components/post-title'
 import { getAllPortfolios } from "../../lib/api"
 import Post from '../../types/post'
 import MorePortfolio from '../../components/more-stories'
-
+import Breadcrumb from '../../components/breadcrumbs'
 type Props = {
     allPosts: Post[]
   }
@@ -16,14 +16,19 @@ const Portfolio = ({allPosts}:Props) => {
   const sajiloRecharge = allPosts[sajiloIndex]
   const withoutSajiloRecharge = allPosts.filter((post) => post.slug !== sajiloRecharge.slug)
   const all = [sajiloRecharge,...withoutSajiloRecharge]
+  const pageTitle = 'Portfolio'
     return(
        <>
        <Layout>
        <Head>
-          <title>Portfolio | {CMS_NAME}</title>
+          <title>{pageTitle} | {CMS_NAME}</title>
         </Head>
            <Container>
-               <PostTitle>Portfolio</PostTitle>
+           <Breadcrumb items={[
+                {title:'Home',url:'/'},
+                {title:pageTitle,url:`/portfolio`},
+              ]}/>
+               <PostTitle>{pageTitle}</PostTitle>
           {allPosts.length > 0 && <MorePortfolio posts={all} />}
            </Container>
        </Layout>
