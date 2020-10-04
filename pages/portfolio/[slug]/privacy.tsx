@@ -19,7 +19,7 @@ const Privacy = () => {
            <Breadcrumb items={[
                 {title:'Portfolio',url:'/portfolio'},
                 {title:'Sajilo Recharge',url:`/portfolio/${slug}`},
-                {title:'Privacy Policy',url:``},
+                {title:'Privacy Policy',url:`/portfolio/${slug}/privacy`},
               ]}/>
            <PostTitle>Privacy Policy</PostTitle>
     <p>{slug}</p>
