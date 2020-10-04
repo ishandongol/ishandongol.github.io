@@ -63,13 +63,13 @@ const Post = ({ post, morePosts, preview }: Props) => {
                         <ul className=" mb-8 flex flex-wrap">
                           {post.teamMembers.sort().map((member, memberIndex) => {
                             return (
-                              <Badge className={`${member === 'Ishan Dongol' ? 'font-medium' : ''} mr-2 mb-3`} color={`${member === 'Ishan Dongol' ? 'bg-gray-300 text-gray-600' : 'bg-gray-200 text-gray-700'}  `} key={memberIndex}>{member}</Badge>
+                              <Badge className={`${member === 'Ishan Dongol' ? 'font-medium' : ''} mr-2 mb-3`} color={`${member === 'Ishan Dongol' ? 'border border-gray-500' : ''} bg-gray-200 text-gray-700  `} key={memberIndex}>{member}</Badge>
                             )
                           })}
                         </ul>
                       </>}
                 </div>
-                <div className="max-w-2xl mx-auto mb-16 flex flex-wrap">
+                <div className={`max-w-2xl mx-auto  flex flex-wrap ${post.privacyPolicy ? 'mb-5': 'mb-16'}`}>
                 <p className="font-medium mb-3 w-full">
                           Tags:
                       </p>
@@ -79,9 +79,15 @@ const Post = ({ post, morePosts, preview }: Props) => {
                     )
                   })}
                 </div>
-                <div className="max-w-2xl mx-auto mt-10 ">
-                  {post.privacyPolicy && <Link href={`/portfolio/${post.slug}/privacy`}><a><Badge>Privacy Policy</Badge></a></Link>}
+               
+                  {post.privacyPolicy && 
+                   <div className="max-w-2xl mx-auto flex flex-wrap ">
+                   <p className="font-medium mb-3 w-full">
+                             More:
+                         </p>
+                  <Link href={`/portfolio/${post.slug}/privacy`}><a><Badge className="hover:bg-sajilo hover:text-white">Privacy Policy</Badge></a></Link>
                 </div>
+                  }
               </article>
             </>
           )}
