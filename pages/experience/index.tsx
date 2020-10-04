@@ -33,9 +33,9 @@ const Experience = ({data}: ExperienceProps) => {
                   <div className="w-full mx-auto">
                      {data && data.map((exp,index) => {
                         if(index%2===0){
-                        return <TimelineLeft {...exp}/>
+                        return <TimelineLeft key={index} {...exp}/>
                         }
-                        return <TimelineRight {...exp}/>
+                        return <TimelineRight key={index} {...exp}/>
 
                      })}
                   </div>

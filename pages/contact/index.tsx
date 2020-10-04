@@ -73,7 +73,7 @@ const Contact = () => {
                   <div className="mt-6 pt-3 md:flex md:flex-wrap mx-6 border-t text-center">
                   {social.map((profile) => {
                      return(
-                      <a href={profile.link} className="mr-2 my-6 md:my-3 block md:flex-auto w-full md:w-auto" target="_blank" rel="noreferrer noopener"><Badge key={profile.link} color="bg-gray-200 text-gray-700" ><i className={`lab la-${profile.icon}`}> </i> {profile.id}</Badge> </a>
+                      <a key={profile.link} href={profile.link} className="mr-2 my-6 md:my-3 block md:flex-auto w-full md:w-auto" target="_blank" rel="noreferrer noopener"><Badge key={profile.link} color="bg-gray-200 text-gray-700" ><i className={`lab la-${profile.icon}`}> </i> {profile.id}</Badge> </a>
                      )
                   })}
                   </div>
