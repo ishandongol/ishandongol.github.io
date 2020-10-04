@@ -11,6 +11,7 @@ import { CMS_NAME } from '../../../lib/constants'
 import markdownToHtml from '../../../lib/markdownToHtml'
 import PostType from '../../../types/post'
 import Link from 'next/link'
+import Breadcrumb from '../../../components/breadcrumbs'
 type Props = {
   post: PostType
   morePosts: PostType[]
@@ -36,6 +37,10 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 </title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
+              <Breadcrumb items={[
+                {title:'Portfolio',url:'/portfolio'},
+                {title:post.title,url:`/portfolio/${post.slug}`},
+              ]}/>
               <PostHeader
                 title={post.title}
                 subTitle={post.subTitle}

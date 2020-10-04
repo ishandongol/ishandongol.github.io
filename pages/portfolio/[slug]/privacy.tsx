@@ -4,19 +4,25 @@ import Head from 'next/head'
 import { CMS_NAME } from '../../../lib/constants'
 import PostTitle  from '../../../components/post-title'
 import {useRouter} from 'next/router'
-
+import Breadcrumb from '../../../components/breadcrumbs'
 const Privacy = () => {
    const router = useRouter()
-   debugger
+   const {slug} = router.query;
     return(
        <>
        <Layout>
        <Head>
           <title>Privacy Policy | {CMS_NAME}</title>
         </Head>
+        
            <Container>
+           <Breadcrumb items={[
+                {title:'Portfolio',url:'/portfolio'},
+                {title:'Sajilo Recharge',url:`/portfolio/${slug}`},
+                {title:'Privacy Policy',url:``},
+              ]}/>
            <PostTitle>Privacy Policy</PostTitle>
-    <p>{router.query.slug}</p>
+    <p>{slug}</p>
            </Container>
        </Layout>
        </>
