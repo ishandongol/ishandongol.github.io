@@ -6,7 +6,7 @@ coverImage: '/assets/media/playstore.png'
 role: 'Initiator | Lead Developer'
 duration: 'Ongoing'
 teamMembers:
-  - "Ishan Dongol"
+  - Ishan Dongol
 tag:
   - "Android"
   - "PlayStore"

@@ -51,28 +51,35 @@ const Post = ({ post, morePosts, preview }: Props) => {
                   role={post.role}
                   teamMembers={post.teamMembers}
                 />
-               
+
                 <PostBody content={post.content} />
-                <div className="max-w-2xl mx-auto">
-                  <p className="font-medium mb-3">
-                  Team Members:
-                  </p>
-                  <ul className="font-thin mb-8">
-                    {post.teamMembers && post.teamMembers.sort().map((member,memberIndex) =>{
-                        return(
-                        <li className={member === 'Ishan Dongol' ? 'font-normal':''} key={memberIndex}>{member}</li>
-                        )
-                    })}
-                  </ul>
+                <div className="max-w-2xl mx-auto mb-8">
+                  {post.teamMembers && post.teamMembers.length === 1 ?
+                      <Badge className="mr-2 mb-3" color="bg-gray-200 text-gray-700" ><span className="font-light">Team: </span> {post.teamMembers[0]}</Badge> :
+                      <>
+                        <p className="font-medium mb-3">
+                          Team Members:
+                      </p>
+                        <ul className=" mb-8 flex flex-wrap">
+                          {post.teamMembers.sort().map((member, memberIndex) => {
+                            return (
+                              <Badge className={`${member === 'Ishan Dongol' ? 'font-medium' : ''} mr-2 mb-3`} color={`${member === 'Ishan Dongol' ? 'bg-gray-300 text-gray-600' : 'bg-gray-200 text-gray-700'}  `} key={memberIndex}>{member}</Badge>
+                            )
+                          })}
+                        </ul>
+                      </>}
                 </div>
                 <div className="max-w-2xl mx-auto mb-16 flex flex-wrap">
-                  {post.tag && post.tag.map((ta,taIndex) => {
-                    return(
+                <p className="font-medium mb-3 w-full">
+                          Tags:
+                      </p>
+                  {post.tag && post.tag.map((ta, taIndex) => {
+                    return (
                       <Badge className="mr-2 mb-3" color="bg-gray-200 text-gray-700" key={taIndex}>{ta}</Badge>
                     )
                   })}
-                  </div>
-                  <div className="max-w-2xl mx-auto mt-10 ">
+                </div>
+                <div className="max-w-2xl mx-auto mt-10 ">
                   {post.privacyPolicy && <Link href={`/portfolio/${post.slug}/privacy`}><a><Badge>Privacy Policy</Badge></a></Link>}
                 </div>
               </article>
