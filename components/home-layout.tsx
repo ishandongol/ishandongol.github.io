@@ -12,7 +12,7 @@ const HomeLayout = ({ children }: Props) => {
         <>
             <Meta />
             <div className="h-auto lg:min-h-screen text-sajilo ">
-                <Header />
+                <Header className="shadow-sm" />
                 <main className="h-calculated">
                     {children}
                 </main>
