@@ -62,8 +62,9 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                 <HeaderLink  key={url+index} {...header} className={router.asPath === url ? 'text-gray-900 border-b-2 py-1 border-sajilo-yellow':'text-gray-700'} />
               )
             })}
+            <a href="https://ishandongol.github.io/ishan_dongol_2018.pdf" target="_blank" className="inline-block text-sm px-4 py-2 leading-none border-2 rounded mr-4 hover:shadow-md text-gray-700"  rel="noreferrer noopener" >Résumé</a>
             <Link href="/contact">
-              <a className={`inline-block text-sm px-4 py-2 leading-none border-2 border-sajilo-yellow rounded ${router.asPath === '/contact' ? ' bg-sajilo-yellow text-sajilo' : 'text-gray-700'} hover:border-sajilo-yellow hover:text-sajilo hover:bg-sajilo-yellow mt-4 lg:mt-0`}>Contact</a>
+              <a className={`inline-block text-sm px-4 py-2 leading-none border-2 border-sajilo-yellow rounded ${router.asPath === '/contact' ? ' bg-sajilo-yellow text-sajilo' : 'text-gray-700'} hover:shadow-md mt-4 lg:mt-0`}>Contact</a>
             </Link>
           </div>
         </div>
