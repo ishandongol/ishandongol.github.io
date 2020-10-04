@@ -5,9 +5,17 @@ import { CMS_NAME } from '../../../lib/constants'
 import PostTitle  from '../../../components/post-title'
 import {useRouter} from 'next/router'
 import Breadcrumb from '../../../components/breadcrumbs'
-const Privacy = () => {
-   const router = useRouter()
-   const {slug} = router.query;
+import { getAllPortfolios, getPortfolioBySlug } from "../../../lib/api"
+
+type Props = {
+   post: {
+      title:string,
+      slug:string
+   }
+ }
+
+const Privacy:React.FC<Props> = ({post}) => {
+   const {slug,title} = post;
     return(
        <>
        <Layout>
@@ -18,7 +26,7 @@ const Privacy = () => {
            <Container>
            <Breadcrumb items={[
                 {title:'Portfolio',url:'/portfolio'},
-                {title:'Sajilo Recharge',url:`/portfolio/${slug}`},
+                {title:title,url:`/portfolio/${slug}`},
                 {title:'Privacy Policy',url:`/portfolio/${slug}/privacy`},
               ]}/>
               <div className="max-w-2xl mx-auto mb-20 pt-10">
@@ -29,15 +37,14 @@ const Privacy = () => {
                     <b>Effective date:</b> April 18, 2017
                     <br />
                     <br />
-                    Welcome to Sajilo Recharge (&quot;Sajilo
-                    Recharge&quot;,&quot; we&quot;,&quot;us&quot;,
-                    or&quot;our&quot;). Sajilo Recharge provides a fast and fun
+                    Welcome to {title} (&quot;{title}&quot;,&quot; we&quot;,&quot;us&quot;,
+                    or&quot;our&quot;). {title} provides a fast and fun
                     way to recharge your mobile balance. Our app is not like
                     other e-banking app, it is a simple app that scans the pin
                     code from the recharge card with the help of phone rear
                     camera and runs the USSD code as per the carrier. Our app
                     currently support the two top carriers of Nepal, NTC and
-                    Ncell. So, with Sajilo Recharge just scan and click Top-Up.
+                    Ncell. So, with {title} just scan and click Top-Up.
                     <br />
                     <br />
                     <ul>
@@ -155,11 +162,10 @@ const Privacy = () => {
                     <b>7. CHANGES TO OUR PRIVACY POLICY</b>
                     <br />
                     <br />
-                    Sajilo Recharge may modify or update this Privacy Policy
+                    {title} may modify or update this Privacy Policy
                     from time to time, so please review it periodically. We may
                     provide you additional forms of notice of modifications or
-                    updates as appropriate. Your continued use of Sajilo
-                    Recharge after any modification to this Privacy Policy will
+                    updates as appropriate. Your continued use of {title} after any modification to this Privacy Policy will
                     constitute your acceptance of such modification.
                 </div>
             </div>
@@ -171,3 +177,41 @@ const Privacy = () => {
 }
 
 export default Privacy
+
+type Params = {
+   params: {
+     slug: string
+   }
+ }
+
+export async function getStaticProps({ params }: Params) {
+   const post = getPortfolioBySlug(params.slug, [
+     'title',
+     'slug',
+     "tag",
+     'author'
+   ])
+ 
+   return {
+     props: {
+       post: {
+         ...post
+       },
+     },
+   }
+ }
+
+ export async function getStaticPaths() {
+   const posts = getAllPortfolios(['slug'])
+ 
+   return {
+     paths: posts.map((posts) => {
+       return {
+         params: {
+           slug: posts.slug,
+         },
+       }
+     }),
+     fallback: false,
+   }
+ }
