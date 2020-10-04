@@ -85,7 +85,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
                    <p className="font-medium mb-3 w-full">
                              More:
                          </p>
-                  <Link href={`/portfolio/${post.slug}/privacy`}><a><Badge className="hover:bg-sajilo hover:text-white"><span className="font-light">View: </span>Privacy Policy</Badge></a></Link>
+                  <Link href={`/portfolio/${post.slug}/privacy`}><a><Badge className="hover:shadow-md"><span className="font-light">View: </span>Privacy Policy</Badge></a></Link>
                 </div>
                   }
               </article>
