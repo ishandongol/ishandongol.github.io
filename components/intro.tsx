@@ -6,7 +6,7 @@ const Intro = () => {
       <div className="lg:col-span-1 h-auto lg:h-calculated flex flex-col-reverse">
       <Skills star containerClassName="mb-12 text-center lg:text-left" iconClassName="hover:text-sajilo-yellow text-gray-700 lg:pl-0 lg:pr-4 pl-2 pr-2 pt-4 lg:pt-6 text-3xl lg:text-6xl text-center"/>
       <p className="text-center lg:text-left text-xs md:text-sm font-bold text-gray-700 tracking-tighter leading-tight pb-2 pt-2">
-        <span className="text-sajilo-yellow mr-1 lg:mr-2">{'['}</span>Computer Engineer<span className="text-gray-500 mr-1 lg:mr-2">{','}</span>JavaScript Developer<span className="text-sajilo-yellow ml-2 md:ml-4">{']'}</span>
+        <span className="text-sajilo-yellow mr-1 lg:mr-2">{'['}</span>Computer Engineer<span className="text-gray-500 mr-1 lg:mr-2">{','}</span>JavaScript Developer<span className="text-sajilo-yellow ml-1 md:ml-2">{']'}</span>
       </p>
     <h2 className="text-center lg:text-left text-xl md:text-6xl font-bold text-gray-700 tracking-tighter leading-tight py-6">
         <span className="text-sajilo-yellow mr-2 lg:mr-4">{'{'}</span><span className="text-gray-500 mr-2 lg:mr-4 hidden lg:inline-block">{'...'}</span>{'ईशान डंगोल'}<span className="text-sajilo-yellow ml-2 md:ml-4">{'}'}</span>

@@ -10,10 +10,12 @@
   "dependencies": {
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
+    "final-form": "^4.20.1",
     "gray-matter": "4.0.2",
     "next": "latest",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-final-form": "^6.5.1",
     "remark": "11.0.2",
     "remark-html": "10.0.0",
     "typescript": "^3.9.2"

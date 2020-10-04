@@ -5,7 +5,7 @@
   endYear: Present
   url: https://fusemachines.com.np
   description: I am working at Fusemachines Nepal.
-- role: Android Developer
+- role: Lead Developer
   org: Sajilo Recharge
   startYear: '2016'
   endYear: Present
