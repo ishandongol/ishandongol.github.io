@@ -17,6 +17,7 @@ tag:
 privacyPolicy: true
 author:
   name: Ishan Dongol
+  email: ishandongol@gmail.com
   picture: '/assets/media/ishan.jpg'
 ogImage:
   url: '/assets/media/playstore.png'

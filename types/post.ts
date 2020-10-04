@@ -6,6 +6,10 @@ type PostType = {
   subTitle:string
   date: string
   coverImage: string
+  role:string
+  tag: string[]
+  teamMembers: string[]
+  duration: string
   author: Author
   excerpt: string
   privacyPolicy: boolean

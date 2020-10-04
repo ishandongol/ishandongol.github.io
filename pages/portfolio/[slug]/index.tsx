@@ -47,9 +47,20 @@ const Post = ({ post, morePosts, preview }: Props) => {
                   subTitle={post.subTitle}
                   coverImage={post.coverImage}
                   author={post.author}
+                  duration={post.duration}
+                  role={post.role}
+                  teamMembers={post.teamMembers}
                 />
+               
                 <PostBody content={post.content} />
-                <div className="max-w-2xl mx-auto ">
+                <div className="max-w-2xl mx-auto mb-16 flex flex-wrap">
+                  {post.tag && post.tag.map((ta,taIndex) => {
+                    return(
+                      <Badge className="mr-2 mb-3" color="bg-gray-200 text-gray-700" key={taIndex}>{ta}</Badge>
+                    )
+                  })}
+                  </div>
+                  <div className="max-w-2xl mx-auto mt-10 ">
                   {post.privacyPolicy && <Link href={`/portfolio/${post.slug}/privacy`}><a><Badge>Privacy Policy</Badge></a></Link>}
                 </div>
               </article>
@@ -73,6 +84,10 @@ export async function getStaticProps({ params }: Params) {
     'title',
     'date',
     'slug',
+    "tag",
+    "role",
+    "teamMembers",
+    "duration",
     'author',
     'content',
     'ogImage',
