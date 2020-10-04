@@ -53,6 +53,18 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 />
                
                 <PostBody content={post.content} />
+                <div className="max-w-2xl mx-auto">
+                  <p className="font-medium mb-3">
+                  Team Members:
+                  </p>
+                  <ul className="font-thin mb-8">
+                    {post.teamMembers && post.teamMembers.sort().map((member,memberIndex) =>{
+                        return(
+                        <li className={member === 'Ishan Dongol' ? 'font-normal':''} key={memberIndex}>{member}</li>
+                        )
+                    })}
+                  </ul>
+                </div>
                 <div className="max-w-2xl mx-auto mb-16 flex flex-wrap">
                   {post.tag && post.tag.map((ta,taIndex) => {
                     return(
