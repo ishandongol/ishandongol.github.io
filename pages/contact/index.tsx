@@ -17,7 +17,7 @@ const Contact = () => {
                 {title:'Home',url:'/'},
                 {title:pageTitle,url:`/contact`},
               ]}/>
-           <PostTitle>{pageTitle}</PostTitle>
+           <PostTitle subTitle="Just a click away.">{pageTitle}</PostTitle>
            </Container>
        </Layout>
        </>

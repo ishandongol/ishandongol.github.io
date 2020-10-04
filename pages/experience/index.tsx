@@ -28,7 +28,7 @@ const Experience = ({data}: ExperienceProps) => {
                   {title:'Home',url:'/'},
                   {title:pageTitle,url:`/experience`},
                ]}/>
-               <PostTitle>{pageTitle}</PostTitle>
+               <PostTitle subTitle="In beta version with constant improvement.">{pageTitle}</PostTitle>
                <div className="min-h-screen flex justify-center lg:my-24">
                   <div className="w-full mx-auto">
                      {data && data.map((exp,index) => {

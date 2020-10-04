@@ -28,7 +28,7 @@ const Portfolio = ({allPosts}:Props) => {
                 {title:'Home',url:'/'},
                 {title:pageTitle,url:`/portfolio`},
               ]}/>
-               <PostTitle>{pageTitle}</PostTitle>
+               <PostTitle subTitle="Creations that might interest you.">{pageTitle}</PostTitle>
           {allPosts.length > 0 && <MorePortfolio posts={all} />}
            </Container>
        </Layout>
