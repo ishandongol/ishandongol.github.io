@@ -12,6 +12,7 @@ import markdownToHtml from '../../../lib/markdownToHtml'
 import PostType from '../../../types/post'
 import Link from 'next/link'
 import Breadcrumb from '../../../components/breadcrumbs'
+import { Badge } from '../../../components/badge'
 type Props = {
   post: PostType
   morePosts: PostType[]
@@ -29,29 +30,31 @@ const Post = ({ post, morePosts, preview }: Props) => {
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
-          <>
-            <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | {CMS_NAME}
-                </title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
-              <Breadcrumb items={[
-                {title:'Portfolio',url:'/portfolio'},
-                {title:post.title,url:`/portfolio/${post.slug}`},
-              ]}/>
-              <PostHeader
-                title={post.title}
-                subTitle={post.subTitle}
-                coverImage={post.coverImage}
-                author={post.author}
-              />
-              <PostBody content={post.content} />
-              {post.privacyPolicy && <Link href="/portfolio/sajilorecharge/privacy"><a className={'ml-4'}>Privacy Policy</a></Link>}
-            </article>
-          </>
-        )}
+            <>
+              <article className="mb-32">
+                <Head>
+                  <title>
+                    {post.title} | {CMS_NAME}
+                  </title>
+                  <meta property="og:image" content={post.ogImage.url} />
+                </Head>
+                <Breadcrumb items={[
+                  { title: 'Portfolio', url: '/portfolio' },
+                  { title: post.title, url: `/portfolio/${post.slug}` },
+                ]} />
+                <PostHeader
+                  title={post.title}
+                  subTitle={post.subTitle}
+                  coverImage={post.coverImage}
+                  author={post.author}
+                />
+                <PostBody content={post.content} />
+                <div className="max-w-2xl mx-auto ">
+                  {post.privacyPolicy && <Link href={`/portfolio/${post.slug}/privacy`}><a><Badge>Privacy Policy</Badge></a></Link>}
+                </div>
+              </article>
+            </>
+          )}
       </Container>
     </Layout>
   )
