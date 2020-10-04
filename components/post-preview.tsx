@@ -21,16 +21,16 @@ const PostPreview = ({
 }: Props) => {
   return (
     <Link as={`/portfolio/${slug}`} href="/portfolio/[slug]">
-    <div className={cn('shadow-small px-4 py-5 cursor-pointer', {
+    <div className={cn('shadow cursor-pointer rounded-lg', {
       'hover:shadow-medium transition-shadow duration-200': slug,
     })}>
       <div className="mb-5">
-        <CoverImage title={title} src={coverImage} />
+        <CoverImage roundedTop title={title} src={coverImage} />
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
-          <a className="hover:underline">{title}</a>
+      <h3 className="px-5 text-3xl  mb-3 leading-snug">
+          <a className="hover:underline font-medium">{title}</a>
       </h3>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+      <p className="px-5 text-lg leading-relaxed mb-4 text-gray-600">{excerpt}</p>
       {/* <Avatar name={author.name} picture={author.picture} /> */}
     </div>
         </Link>

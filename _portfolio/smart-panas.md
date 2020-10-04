@@ -1,7 +1,7 @@
 ---
 title: 'Smart Panas'
 subTitle: 'An Arduino powered light controlled by Android™.'
-excerpt: 'Smart Panas is an Arduino powered light controlled by Android™ Application. I worked on both hardware and software.'
+excerpt: 'Smart Panas is an Arduino powered light controlled by Android™ Application.'
 coverImage: '/assets/media/smart-panas.png'
 role: Designer | Developer
 duration: 1 Month

@@ -14,7 +14,7 @@ type Props = {
 const PostHeader = ({ title, coverImage, author,subTitle }: Props) => {
   return (
     <>
-      <PostTitle subTitle={subTitle}>{title}</PostTitle>
+      <PostTitle alignLeft subTitle={subTitle}>{title}</PostTitle>
       <div className="hidden md:block md:mb-12">
         <Avatar name={author.name} picture={author.picture} />
       </div>
