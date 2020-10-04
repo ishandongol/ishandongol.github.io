@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
       <Container>
         
         <div className="flex lg:hidden">
-        <div className="flex-auto text-left py-1">
+        <div className="flex-auto text-left py-1 text-xl">
           <HeaderLogo/>
           </div>
           <button onClick={()=>{
@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
           
         </div>
         <div className="inline flex-grow lg:flex lg:items-center lg:w-auto lg:text-right">
-        <div className="lg:inline-block lg:align-middle hidden">
+        <div className="lg:inline-block lg:align-middle hidden text-2xl">
         <HeaderLogo/>
         </div>
           <div className={`text-sm lg:flex-grow ${toggled ? '':'hidden'} lg:inline`}>

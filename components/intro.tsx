@@ -9,7 +9,7 @@ const Intro = () => {
         <span className="text-sajilo-yellow mr-1 lg:mr-2">{'['}</span>Computer Engineer<span className="text-gray-500 mr-1 lg:mr-2">{','}</span>JavaScript Developer<span className="text-sajilo-yellow ml-1 md:ml-2">{']'}</span>
       </p>
     <h2 className="text-center lg:text-left text-2xl md:text-6xl font-bold text-gray-700 tracking-tighter leading-tight py-4 lg:py-6">
-        <span className="text-sajilo-yellow mr-2 lg:mr-4">{'<'}</span>{'ईशान डंगोल'}<span className="text-sajilo-yellow ml-2 md:ml-4">{'/>'}</span>
+        <span className="text-sajilo-yellow mr-2 lg:mr-4">{'<'}</span>{'Ishan Dongol'}<span className="text-sajilo-yellow ml-2 md:ml-4">{'/>'}</span>
       </h2>
       </div>
       <div className="lg:col-span-2 bg-hero bg-no-repeat lg:bg-right-bottom lg:h-calculated h-64 bg-bottom ">
