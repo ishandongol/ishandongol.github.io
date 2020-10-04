@@ -1,5 +1,5 @@
 ---
-title: 'ICDRET'
+title: 'ICDRET 2018'
 subTitle: 'The 5th International Conference on Developments in Renewable Energy
     Technology 2018.'
 excerpt: "The 5th International Conference on Developments in Renewable Energy
