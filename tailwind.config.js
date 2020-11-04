@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       height:{
-        'calculated':"calc( 100vh - 80px )",
+        'calculated':"calc( 100vh - 84px )",
         'intro':"calc( 100vh - 120px )"
       },
       colors: {

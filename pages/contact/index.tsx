@@ -12,6 +12,16 @@ interface Social{
 }
 const social:Social[] = [
    {
+      "icon": "linkedin",
+      "link": "https://www.linkedin.com/in/lognod/",
+      "id": "lognod"
+  },
+  {
+      "icon": "github",
+      "link": "https://github.com/ishandongol",
+      "id": "ishandongol"
+  },
+   {
        "icon": "facebook",
        "link": "https://www.facebook.com/dongol.ishan",
        "id": "dongol.ishan"
@@ -25,17 +35,8 @@ const social:Social[] = [
        "icon": "twitter",
        "link": "https://twitter.com/lognod",
        "id": "lognod"
-   },
-   {
-       "icon": "github",
-       "link": "https://github.com/ishandongol",
-       "id": "ishandongol"
-   },
-   {
-       "icon": "linkedin",
-       "link": "https://www.linkedin.com/in/lognod/",
-       "id": "lognod"
    }
+   
 ]
 const Contact = () => {
    const pageTitle = 'Contact'

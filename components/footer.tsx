@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-center items-center mt-3 lg:pl-4 lg:w-1/4">
             <Link href="/contact">
               <a
-                className="mx-3 w-full lg:w-auto bg-sajilo hover:bg-sajilo-yellow hover:text-sajilo border border-sajilo text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0 rounded"
+                className="mx-3 w-full lg:w-auto bg-sajilo hover:bg-sajilo-yellow hover:text-sajilo border border-sajilo text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0 rounded-full text-center"
               >
                 Contact Now
             </a>
