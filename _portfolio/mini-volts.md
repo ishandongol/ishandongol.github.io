@@ -5,6 +5,7 @@ excerpt: 'miniVolts is an Arduino powered RC car and controlled by Android Appli
 coverImage: '/assets/media/mini-volts.png'
 role: Designer | Developer
 duration: 6 Months
+order: 9
 teamMembers:
   - Ishan Dongol
   - Shubham Joshi

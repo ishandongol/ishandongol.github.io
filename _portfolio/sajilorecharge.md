@@ -1,10 +1,11 @@
 ---
 title: 'Sajilo Recharge'
 subTitle: 'Less Time for Recharge, More Time for Fun.'
-excerpt: 'Sajilo Recharge is an Application for Android™ that scans the recharge card for pin numbers and runs the USSD code. You can download Sajilo Recharge form Google Play.'
+excerpt: 'Sajilo Recharge is an Application for Android™ that scans the recharge card and runs the USSD code.'
 coverImage: '/assets/media/playstore.png'
 role: 'Initiator | Lead Developer'
 duration: 'Ongoing'
+order: 2
 teamMembers:
   - Ishan Dongol
 tag:
@@ -24,4 +25,3 @@ ogImage:
 ---
 
 Sajilo Recharge is an **Application for Android™** that scans the recharge card for pin numbers and runs the USSD code. You can download Sajilo Recharge form Google Play.
-

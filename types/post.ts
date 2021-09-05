@@ -6,6 +6,7 @@ type PostType = {
   subTitle:string
   date: string
   coverImage: string
+  order: string
   role:string
   tag: string[]
   teamMembers: string[]

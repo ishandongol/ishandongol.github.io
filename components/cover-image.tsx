@@ -7,14 +7,18 @@ type Props = {
   slug?: string
   shadow?:boolean
   roundedTop?:boolean
+  isSmall?:boolean
 }
 
-const CoverImage = ({ title, src, slug,shadow,roundedTop }: Props) => {
+const CoverImage = ({ title, src, slug,shadow,roundedTop,isSmall }: Props) => {
   const image = (
     <img
       src={src}
+      style={{
+        maxHeight: isSmall ? '185.33px' : undefined
+      }}
       alt={`Cover Image for ${title}`}
-      className={cn('w-screen', {'shadow-small ':shadow}, {
+      className={cn('w-screen',{'object-cover':isSmall}, {'shadow-small ':shadow}, {
         'hover:shadow-medium transition-shadow duration-200': slug,
       },{'rounded-t-lg':roundedTop},{'rounded-lg':!roundedTop})}
     />

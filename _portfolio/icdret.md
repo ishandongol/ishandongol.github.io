@@ -7,6 +7,7 @@ excerpt: "The 5th International Conference on Developments in Renewable Energy
 coverImage: '/assets/media/icdret.png'
 role: Designer
 duration: 2 Months
+order: 5
 teamMembers:
   - Ishan Dongol
 tag:

@@ -5,6 +5,7 @@ excerpt: 'Smart Panas is an Arduino powered light controlled by Android™ Appli
 coverImage: '/assets/media/smart-panas.png'
 role: Designer | Developer
 duration: 1 Month
+order: 8
 teamMembers:
   - Ishan Dongol
   - Prashant Subedi

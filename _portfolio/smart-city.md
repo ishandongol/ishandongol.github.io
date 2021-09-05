@@ -6,6 +6,7 @@ excerpt: "Department of Computer Science and Engineering (DoCSE), Kathmandu Univ
 coverImage: '/assets/media/smart-city.png'
 role: Designer
 duration: 2 Months
+order: 10
 teamMembers:
   - Ishan Dongol
 tag:

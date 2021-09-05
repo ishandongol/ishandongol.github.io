@@ -6,6 +6,7 @@ excerpt: "The 7th International Science Conference was held on 10-11 November,
 coverImage: '/assets/media/isc.png'
 role: Designer
 duration: 2 Months
+order: 6
 teamMembers:
   - Ishan Dongol
 tag:

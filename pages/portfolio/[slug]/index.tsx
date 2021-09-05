@@ -51,7 +51,6 @@ const Post = ({ post, morePosts, preview }: Props) => {
                   role={post.role}
                   teamMembers={post.teamMembers}
                 />
-
                 <PostBody content={post.content} />
                 <div className="max-w-2xl mx-auto mb-8">
                   {post.teamMembers && post.teamMembers.length === 1 ?

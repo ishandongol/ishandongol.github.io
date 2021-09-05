@@ -27,7 +27,7 @@ const PostPreview = ({
       'hover:shadow-medium transition-shadow duration-200': slug,
     })}>
       <div className="mb-5">
-        <CoverImage roundedTop title={title} src={coverImage} />
+        <CoverImage isSmall roundedTop title={title} src={coverImage} />
       </div>
       <h3 className="px-5 text-3xl  mb-3 leading-snug">
           <a className="hover:underline font-medium">{title}</a>

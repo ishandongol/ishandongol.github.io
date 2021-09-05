@@ -12,10 +12,6 @@ type Props = {
   }
 
 const Portfolio = ({allPosts}:Props) => {
-  const sajiloIndex = allPosts.findIndex((post) => post.slug === 'sajilorecharge')
-  const sajiloRecharge = allPosts[sajiloIndex]
-  const withoutSajiloRecharge = allPosts.filter((post) => post.slug !== sajiloRecharge.slug)
-  const all = [sajiloRecharge,...withoutSajiloRecharge]
   const pageTitle = 'Portfolio'
     return(
        <>
@@ -29,7 +25,8 @@ const Portfolio = ({allPosts}:Props) => {
                 {title:pageTitle,url:`/portfolio`},
               ]}/>
                <PostTitle subTitle="Creations that might interest you.">{pageTitle}</PostTitle>
-          {allPosts.length > 0 && <MorePortfolio posts={all} />}
+          {allPosts.length > 0 && <MorePortfolio posts={allPosts.sort((a,b) => parseInt(a.order||'0',10) <  parseInt(b.order||'0',10) ? -1:1
+          )} />}
            </Container>
        </Layout>
        </>
@@ -44,6 +41,7 @@ export const getStaticProps = async () => {
       'date',
       'slug',
       'author',
+      'order',
       'role',
       'coverImage',
       'excerpt',
