@@ -9,7 +9,7 @@ const Index = () => {
     <>
       <HomeLayout>
         <Head>
-          <title>Home | {CMS_NAME}</title>
+          <title>{CMS_NAME}</title>
         </Head>
         <Container>
           <Intro />

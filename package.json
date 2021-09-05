@@ -1,13 +1,13 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": " https://ishandongol.github.io/",
+  "homepage": " https://ishandongol.github.io",
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
     "start": "next start",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -b gh-pages -d build",
+    "predeploy": "yarn build && touch ./out/.nojekyll",
+    "deploy": "gh-pages -b gh-pages -d out",
     "typecheck": "tsc"
   },
   "dependencies": {
