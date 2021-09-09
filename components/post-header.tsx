@@ -33,9 +33,9 @@ const PostHeader = ({ title, coverImage, author,subTitle,duration ,role,teamMemb
           <Avatar name={author.name} picture={author.picture} />
         </div>
         {(role || duration) && <div className="w-full flex flex-wrap">
-      {role && <Badge color="bg-gray-200 text-gray-700" className="mr-2"><span className="font-light">Role: </span>{role}</Badge>}
-      {duration && <Badge color="bg-gray-200 text-gray-700" className="mr-2"><span className="font-light">Duration: </span>{duration}</Badge>}
-      {teamMembers && teamMembers.length > 0 && <Badge color="bg-gray-200 text-gray-700" className="mr-2"><span className="font-light">Team: </span>{teamMembers.length}</Badge>}
+      {role && <Badge color="bg-gray-200 text-gray-700" className="mr-2 mb-3"><span className="font-light">Role: </span>{role}</Badge>}
+      {duration && <Badge color="bg-gray-200 text-gray-700" className="mr-2 mb-3"><span className="font-light">Duration: </span>{duration}</Badge>}
+      {teamMembers && teamMembers.length > 0 && <Badge color="bg-gray-200 text-gray-700" className="mr-2 mb-3"><span className="font-light">Team: </span>{teamMembers.length}</Badge>}
       </div>}
       </div>
     </>
