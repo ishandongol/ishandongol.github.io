@@ -15,7 +15,7 @@
     "date-fns": "2.16.1",
     "final-form": "^4.20.1",
     "gray-matter": "4.0.2",
-    "next": "^10.0.1",
+    "next": "^11.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-final-form": "^6.5.1",
