@@ -6,7 +6,7 @@ excerpt: "I developed an Application for Android that generates emojis as per
 coverImage: '/assets/media/easy-moji.png'
 role: 'Developer'
 duration: '1 Month'
-order: 3
+order: 4
 teamMembers:
   - Ishan Dongol
 tag:

@@ -5,7 +5,7 @@ excerpt: 'How to is my first ever project. The game was written in C++ and SDL.'
 coverImage: '/assets/media/how-to.png'
 role: Designer | Developer
 duration: 6 Months
-order: 12
+order: 13
 teamMembers:
   - Ishan Dongol
   - Shubham Joshi

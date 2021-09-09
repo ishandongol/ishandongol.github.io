@@ -5,7 +5,10 @@ excerpt: 'I worked as a design team lead in IT MEET 2018'
 coverImage: '/assets/media/itmeet.png'
 role: Designer
 duration: 2 Months
-order: 7
+order: 8
+demo:
+  url: 'https://itmeet.github.io/'
+  title: 'ITMEET 2018 Website'
 teamMembers:
   - Ishan Dongol
   - Anurag Adhikari

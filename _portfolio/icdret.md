@@ -7,7 +7,10 @@ excerpt: "The 5th International Conference on Developments in Renewable Energy
 coverImage: '/assets/media/icdret.png'
 role: Designer
 duration: 2 Months
-order: 5
+order: 6
+demo:
+  url: 'http://old.ku.edu.np/icdret2018/ICDRET2018-AbstractBook.pdf'
+  title: 'Abstract Book Link'
 teamMembers:
   - Ishan Dongol
 tag:

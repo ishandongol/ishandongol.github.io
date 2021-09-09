@@ -6,7 +6,7 @@ excerpt: "KAPP is a Navigation and Information based Android App specially desig
 coverImage: '/assets/media/ku-app.png'
 role: Designer | Developer
 duration: 1 Year
-order: 13
+order: 14
 teamMembers:
   - Ishan Dongol
   - Shubham Joshi

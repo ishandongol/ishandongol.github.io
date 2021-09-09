@@ -49,6 +49,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
                   author={post.author}
                   duration={post.duration}
                   role={post.role}
+                  demo={post.demo}
                   teamMembers={post.teamMembers}
                 />
                 <PostBody content={post.content} />
@@ -67,6 +68,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
                           })}
                         </ul>
                       </>}
+                      {post.demo && post.demo.url && <a href={post.demo.url} target="_blank" rel="noreferrer"><Badge className="mr-2 mb-3" color="bg-sajilo text-white" >{post.demo.title || 'Click for Demo'}<i className="ml-2 las la-external-link-alt text-sm"/></Badge></a> }
                 </div>
                 <div className={`max-w-2xl mx-auto  flex flex-wrap ${post.privacyPolicy ? 'mb-5': 'mb-16'}`}>
                 <p className="font-medium mb-3 w-full">
@@ -117,7 +119,8 @@ export async function getStaticProps({ params }: Params) {
     'ogImage',
     'privacyPolicy',
     'coverImage',
-    'subTitle'
+    'subTitle',
+    'demo'
   ])
   const content = await markdownToHtml(post.content || '')
 

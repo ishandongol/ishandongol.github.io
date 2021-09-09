@@ -6,7 +6,7 @@ excerpt: "I developed an object classification Application for Android™ that i
 coverImage: '/assets/media/whats-that.png'
 role: 'Developer'
 duration: '1 Month'
-order: 4
+order: 5
 teamMembers:
   - Ishan Dongol
 tag:

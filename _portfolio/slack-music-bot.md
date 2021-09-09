@@ -16,6 +16,9 @@ tag:
   - "Slack Events API"
   - "Opensource"
 privacyPolicy: false
+demo:
+  url: 'https://ishandongol.com.np/slack-music-bot-client/'
+  title: 'Click for Demo'
 author:
   name: Ishan Dongol
   email: ishandongol@gmail.com
@@ -24,4 +27,4 @@ ogImage:
   url: '/assets/media/slack-music.png'
 ---
 
-Slack Music is a bot for slack which creates a playlist of songs shared in slack channel. The bot has a featured names "Sangai Sunam" that plays the shared shongs in sync with each other.
+Slack Music is a bot for slack which creates a playlist of songs shared in slack channel. The bot has a featured names **"Sangai Sunam"** that plays the shared shongs in sync with each other. It is currently hosted on **[Heroku](https://www.heroku.com/)**.

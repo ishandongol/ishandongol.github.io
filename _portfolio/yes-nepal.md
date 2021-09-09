@@ -6,7 +6,7 @@ excerpt: 'I imporvised the Logo for Yes! Nepal. YES! Nepal is a youth empowermen
 coverImage: '/assets/media/yes-nepal.png'
 role: Designer
 duration: 1 Week
-order: 11
+order: 12
 teamMembers:
   - Ishan Dongol
 tag:

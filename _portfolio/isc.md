@@ -6,7 +6,10 @@ excerpt: "The 7th International Science Conference was held on 10-11 November,
 coverImage: '/assets/media/isc.png'
 role: Designer
 duration: 2 Months
-order: 6
+order: 7
+demo:
+  url: 'http://old.ku.edu.np/news/index.php?op=ViewArticle&articleId=1964&blogId=1'
+  title: 'Kathmandu University News'
 teamMembers:
   - Ishan Dongol
 tag:

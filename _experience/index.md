@@ -1,10 +1,16 @@
 ---
 - role: Software Engineer
-  org: Fusemachines Nepal
-  startYear: January 2020
+  org: Innovate Tech
+  startYear: January 2021
   endYear: Present
+  url: https://www.innovatetech.io
+  description: I am working as Full Stack Developer.
+- role: Software Engineer
+  org: Fusemachines Nepal
+  startYear: November 2018
+  endYear: December 2020
   url: https://fusemachines.com.np
-  description: I am working at Fusemachines Nepal.
+  description: I worked as Frontend Engineer (React).
 - role: Lead Developer
   org: Sajilo Recharge
   startYear: '2016'
@@ -12,12 +18,6 @@
   url: https://play.google.com/store/apps/details?id=np.com.ishandongol.sajilorecharge&hl=en
   description: I developed Sajilo Recharge, an Application for Android™. Sajilo Recharge
     has been downloaded 50K+ times from PlayStore.
-- role: Software Engineer Associate
-  org: Fusemachines Nepal
-  startYear: November 2018
-  endYear: December 2019
-  url: https://fusemachines.com.np
-  description: I worked as Javascript Developer.
 - role: Tech Intern
   org: Fusemachines Nepal
   startYear: July 2018

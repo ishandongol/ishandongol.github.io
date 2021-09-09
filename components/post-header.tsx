@@ -9,18 +9,21 @@ type Props = {
   subTitle?:string
   coverImage: string
   // date: string
+  demo?: {
+    url:string
+    title:string
+  }
   author: Author
   duration?: string
   role?: string
   teamMembers?: string[]
 }
 
-const PostHeader = ({ title, coverImage, author,subTitle,duration ,role,teamMembers}: Props) => {
+const PostHeader = ({ title, coverImage, author,subTitle,duration ,role,teamMembers,demo}: Props) => {
   return (
     <>
-      
       <div className="max-w-2xl mx-auto">
-      <PostTitle alignLeft subTitle={subTitle}>{title}</PostTitle>
+      <PostTitle url={demo?.url} alignLeft subTitle={subTitle}>{title}</PostTitle>
 
       <div className="mb-8 md:mb-16 sm:mx-0">
         <CoverImage shadow title={title} src={coverImage} />

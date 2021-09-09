@@ -5,6 +5,10 @@ type PostType = {
   title: string
   subTitle:string
   date: string
+  demo?:{
+    url:string;
+    title:string;
+  }
   coverImage: string
   order: string
   role:string

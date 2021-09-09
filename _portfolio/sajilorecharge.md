@@ -6,6 +6,9 @@ coverImage: '/assets/media/playstore.png'
 role: 'Initiator | Lead Developer'
 duration: 'Ongoing'
 order: 2
+demo:
+  url: 'https://play.google.com/store/apps/details?id=np.com.ishandongol.sajilorecharge&hl=en_US&gl=US'
+  title: 'Playstore Link'
 teamMembers:
   - Ishan Dongol
 tag:
@@ -25,3 +28,4 @@ ogImage:
 ---
 
 Sajilo Recharge is an **Application for Android™** that scans the recharge card for pin numbers and runs the USSD code. You can download Sajilo Recharge form Google Play.
+[![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=np.com.ishandongol.sajilorecharge&hl=en_US&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
