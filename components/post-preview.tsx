@@ -22,7 +22,7 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
-    <Link as={`/portfolio/${slug}`} href="/portfolio/[slug]">
+    <Link as={`/portfolio/${slug}`} href="/portfolio/[slug]" passHref>
     <div className={cn('shadow cursor-pointer rounded-lg pb-4', {
       'hover:shadow-medium transition-shadow duration-200': slug,
     })}>
