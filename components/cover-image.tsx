@@ -12,6 +12,7 @@ type Props = {
 
 const CoverImage = ({ title, src, slug,shadow,roundedTop,isSmall }: Props) => {
   const image = (
+    // eslint-disable-next-line @next/next/no-img-element
     <img
       src={src}
       style={{

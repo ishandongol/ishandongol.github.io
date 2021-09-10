@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Container from "../../components/container"
 import Layout from "../../components/layout"
 import Head from 'next/head'
@@ -56,10 +57,10 @@ const Contact = () => {
                </div>
                <div className="bg-white mt-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-xl rounded-lg shadow hover:shadow-medium mx-auto mb-20">
                   <div className="relative h-40">
-                     <img className="absolute h-full w-full object-cover" src="/assets/media/smart-panas.png" />
+                     <img className="absolute h-full w-full object-cover" alt="Smart Panas" src="/assets/media/smart-panas.png" />
                   </div>
                   <div className="relative shadow mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
-                     <img className="object-cover w-full h-full" src="/assets/media/ishan.jpg" />
+                     <img className="object-cover w-full h-full" alt="Ishan Dongol" src="/assets/media/ishan.jpg" />
                   </div>
                   <div className="mt-16">
                      <h1 className="text-lg text-center font-semibold">
