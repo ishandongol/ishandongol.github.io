@@ -13,6 +13,10 @@ import PostType from '../../../types/post'
 import Link from 'next/link'
 import Breadcrumb from '../../../components/breadcrumbs'
 import { Badge } from '../../../components/badge'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  findIconDefinition
+} from '@fortawesome/fontawesome-svg-core'
 type Props = {
   post: PostType
   morePosts: PostType[]
@@ -68,7 +72,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
                           })}
                         </ul>
                       </>}
-                      {post.demo && post.demo.url && <a href={post.demo.url} target="_blank" rel="noreferrer"><Badge className="mr-2 mb-3" color="bg-sajilo text-white" >{post.demo.title || 'Click for Demo'}<i className="ml-2 las la-external-link-alt text-sm"/></Badge></a> }
+                      {post.demo && post.demo.url && <a href={post.demo.url} target="_blank" rel="noreferrer"><Badge className="mr-2 mb-3" color="bg-sajilo text-white" >{post.demo.title || 'Click for Demo'}<FontAwesomeIcon icon={findIconDefinition({prefix:'fas',iconName:'external-link-alt' as any})} className="ml-2 text-sm"/></Badge></a> }
                 </div>
                 <div className={`max-w-2xl mx-auto  flex flex-wrap ${post.privacyPolicy ? 'mb-5': 'mb-16'}`}>
                 <p className="font-medium mb-3 w-full">
